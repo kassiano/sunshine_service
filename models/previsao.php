@@ -40,7 +40,7 @@ class Previsao{
     }
 
     public static function getNow() {
-          return new Previsao( "33", "21", "Ensolarado","14/08/2016","Hoje" "http://sunshineapp.heroku.com/content/img/img36.png");
+          return new Previsao( "33", "21", "Ensolarado","14/08/2016","Hoje", "http://sunshineapp.heroku.com/content/img/img36.png");
     }
 
 }
