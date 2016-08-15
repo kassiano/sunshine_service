@@ -11,7 +11,7 @@ class SunshineServiceController{
 
     public function getPrevisoes(){
 
-        $list = Contato::all();
+        $list = Previsao::all();
         echo json_encode($list);
     }
 }

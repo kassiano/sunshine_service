@@ -12,7 +12,7 @@
       // create a new instance of the needed controller
       switch($controller) {
 
-          case 'service':
+          case 'sunshine':
               require_once('models/previsao.php');
               $controller = new SunshineServiceController();
               break;
@@ -25,14 +25,13 @@
 
   // just a list of the controllers we have and their actions
   // we consider those "allowed" values
-  $controllers = array('contatos' => ['home', 'error', 'novo','editar'] ,
-                        'service' => ['getPrevisoes']
+  $controllers = array('sunshine' => ['getPrevisoes']
       );
 
   // check that the requested controller and action are both allowed
   // if someone tries to access something else he will be redirected to the error action of the contatos controller
   if (array_key_exists($controller, $controllers)) {
-      if (in_array($action, $controllers[$controller])) {
+      if (in_array($action, $controllers[$controller])) {        
           call($controller, $action);
       } else {
           call('contatos', 'error');
