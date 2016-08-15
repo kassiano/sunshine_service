@@ -7,7 +7,7 @@
  */
 
 
-class SunshineServiceController{
+class ClimaController{
 
     public function getPrevisoes(){
 
