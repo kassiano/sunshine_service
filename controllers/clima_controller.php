@@ -11,7 +11,10 @@ class ClimaController{
 
     public function getPrevisoes(){
 
-        $list = Previsao::all();
-        echo json_encode($list);
+       $agora = Previsao::getNow();
+       $list = Previsao::all();
+       $ret = array("agora" => $agora , "previsoes" => $list );
+        
+        echo json_encode($ret);
     }
 }

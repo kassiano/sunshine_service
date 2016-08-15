@@ -8,14 +8,14 @@
 
 class Previsao{
 
-    public $id;
+
     public $tempMax;
     public $tempMin;
     public $descricao;
     public $imagem;
 
-    public function __construct($id,$tempMax, $tempMin, $descricao, $imagem) {
-        $this->id  = $id;
+    public function __construct($tempMax, $tempMin, $descricao, $imagem) {
+
         $this->tempMax  = $tempMax;
         $this->tempMin = $tempMin;
         $this->descricao = $descricao;
@@ -25,16 +25,18 @@ class Previsao{
     public static function all() {
         $list = [];
 
-        $list[] = new Previsao(1, "30º", "26º", "Ensolarado", "http://sunshineapp.heroku.com/content/img/img32.png");
-        $list[] = new Previsao(2, "25º", "17º", "Ensolarado", "http://sunshineapp.heroku.com/content/img/img34.png");
-        $list[] = new Previsao(3, "17º", "11º", "Nublado", "http://sunshineapp.heroku.com/content/img/img26.png");
-        $list[] = new Previsao(4, "18º", "9º", "Chuvas", "http://sunshineapp.heroku.com/content/img/img40.png");
-        $list[] = new Previsao(5, "22º", "13º", "Parcialmente nublado", "http://sunshineapp.heroku.com/content/img/img30.png");
-        $list[] = new Previsao(6, "16º", "10º", "Risco de chuvas", "http://sunshineapp.heroku.com/content/img/img42.png");
-        $list[] = new Previsao(7, "15º", "8º", "Chuvas fortes", "http://sunshineapp.heroku.com/content/img/img39.png");
+        $list[] = new Previsao( "30", "26", "Ensolarado", "http://sunshineapp.heroku.com/content/img/img32.png");
+        $list[] = new Previsao( "25", "17", "Ensolarado", "http://sunshineapp.heroku.com/content/img/img34.png");
+        $list[] = new Previsao( "17", "11", "Nublado", "http://sunshineapp.heroku.com/content/img/img26.png");
+        $list[] = new Previsao( "18", "9", "Chuvas", "http://sunshineapp.heroku.com/content/img/img40.png");
+        $list[] = new Previsao( "22", "13", "Parcialmente nublado", "http://sunshineapp.heroku.com/content/img/img30.png");
+        $list[] = new Previsao( "16", "10", "Risco de chuvas", "http://sunshineapp.heroku.com/content/img/img42.png");
+        $list[] = new Previsao( "15", "8", "Chuvas fortes", "http://sunshineapp.heroku.com/content/img/img39.png");
         return $list;
     }
 
-
+    public static function getNow() {
+          return new Previsao( "33", "21", "Ensolarado", "http://sunshineapp.heroku.com/content/img/img36.png");
+    }
 
 }
