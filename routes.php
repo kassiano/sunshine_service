@@ -14,7 +14,7 @@
 
           case 'clima':
               require_once('models/previsao.php');
-              $controller = new SunshineServiceController();
+              $controller = new ClimaController();
               break;
 
       }
