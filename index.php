@@ -17,6 +17,15 @@
     $controller = $_GET['controller'];
     $action     = $_GET['action'];
 
+
+    if (empty($controller)) {
+        $controller = "clima";
+    }
+
+    if (empty($controller)) {
+        $action = "getPrevisoes";
+    }
+
     require_once('routes.php');
 
 ?>
