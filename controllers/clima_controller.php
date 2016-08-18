@@ -18,4 +18,15 @@ class ClimaController{
 
         echo json_encode($ret);
     }
+
+
+    public function letras(){
+
+        $nome = $_GET["id"];
+        $ret = array('nome' => $nome , 'letras' =>  $nome.length  );
+
+        echo json_encode($ret);
+
+    }
+
 }
