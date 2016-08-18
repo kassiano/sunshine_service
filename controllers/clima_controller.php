@@ -11,11 +11,11 @@ class ClimaController{
 
     public function getPrevisoes(){
 
-       $agora = Previsao::getNow();
-       $list = Previsao::all();
-       $ret = array("agora" => $agora , "previsoes" => $list );
 
+        $cidade = $_GET["id"];
 
-        echo json_encode($ret);
+        $json = file_get_contents('http://api.openweathermap.org/data/2.5/forecast?q='.$cidade.',br&mode=json&appid=eb949f17faa6fbdb7a837ddfc7993348');
+
+        echo $json;
     }
 }

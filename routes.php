@@ -17,9 +17,6 @@
               $controller = new ClimaController();
               break;
 
-          case 'placa':
-              $controller = new PlacaController();
-              break;
 
       }
 
@@ -29,8 +26,7 @@
 
   // just a list of the controllers we have and their actions
   // we consider those "allowed" values
-  $controllers = array('clima' => ['getPrevisoes'],
-            'placa' => ['consultar']
+  $controllers = array('clima' => ['getPrevisoes']
       );
 
   // check that the requested controller and action are both allowed
