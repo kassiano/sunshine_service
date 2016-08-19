@@ -3,8 +3,8 @@
 <html>
 <head>
   <title>Busca de CEP</title>
-  <link rel="stylesheet" type="text/css" href="content/lib/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="content/css/site.css">
+  <link rel="stylesheet" type="text/css" href="../content/lib/bootstrap/bootstrap-3.3.6-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../content/css/site.css">
 </head>
 <body>
 
