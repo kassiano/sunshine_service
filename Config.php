@@ -6,4 +6,4 @@
  * Time: 20:47
  */
 
-define("PROJECTDIR", "");
+define("PROJECTDIR", "http://sunshineapp.herokuapp.com");
