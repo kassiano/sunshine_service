@@ -6,4 +6,4 @@
  * Time: 20:47
  */
 
-define("PROJECTDIR", "contatos_mvc");
+define("PROJECTDIR", "");

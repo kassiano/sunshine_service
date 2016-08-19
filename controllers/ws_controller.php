@@ -22,8 +22,6 @@ class WsController{
 
         $endereco = json_decode($json);
 
-        var_dump($endereco);
-
         $logradouro =$endereco->logradouro;
         $bairro=$endereco->bairro;
       }

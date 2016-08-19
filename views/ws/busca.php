@@ -2,7 +2,7 @@
 
 <form method="post">
 
- <table>
+ <table class="table">
       <tr>
           <td>CEP</td> <td> <input type="text" name="cep" value="<?php echo $cep ?>"/></td>
       </tr>
