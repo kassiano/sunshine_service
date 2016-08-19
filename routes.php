@@ -16,8 +16,9 @@
               require_once('models/previsao.php');
               $controller = new ClimaController();
               break;
-
-
+          case 'ws':
+              $controller = new WsController();
+              break;
       }
 
       // call the action
@@ -26,7 +27,8 @@
 
   // just a list of the controllers we have and their actions
   // we consider those "allowed" values
-  $controllers = array('clima' => ['getPrevisoes', 'letras']
+  $controllers = array('clima' => ['getPrevisoes', 'letras'],
+                      'ws' => ['busca']
       );
 
   // check that the requested controller and action are both allowed
