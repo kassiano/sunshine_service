@@ -27,6 +27,6 @@ class WsController{
         $logradouro =$endereco->logradouro;
         $bairro=$endereco->bairro;
       }
-
+      require_once('views/ws/busca.php');
     }
 }
