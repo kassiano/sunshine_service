@@ -7,7 +7,7 @@
           <td>CEP</td> <td> <input type="text" name="cep" value="<?php echo $cep ?>"/></td>
       </tr>
       <tr>
-          <td></td> <td> <input type="submit" value="consultar"/></td>
+          <td></td> <td> <input type="submit" value="consultar" class="btn"/></td>
       </tr>
       <tr>
           <td>Logradouro</td> <td> <input type="text" name="logradouro" value="<?php echo $logradouro ?>" /></td>
